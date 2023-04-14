@@ -1,0 +1,249 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+/* header starts here */
+header {
+    height: 70px;
+   
+    box-shadow: 0px 2px 6px 0px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+}
+nav {
+    width: 90%;
+   
+    justify-content: space-between;
+    display: flex;
+}
+.logo-text {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    color: #000;
+}
+#cart-icon {
+    cursor: pointer;
+}
+/* cart */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    box-shadow: -2px 0px 4px hsl(0 4% 15% / 10%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 99;
+    transition: 0.5s;
+}
+.cart.active {
+    right: 0;
+}
+.Cart-title {
+   text-align: center;
+   font-weight: 500;
+   margin-top: 20px;
+}
+
+.cart-img {
+    width: 80px;
+    height: 80px;
+}
+.cart-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details-box {
+    display: grid;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.cart-product-title {
+    font-size: large;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+.cart-price {
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.cart-quantity {
+    width: 30px;
+    height: 25px;
+    border: 1px solid;
+    margin-top: 5px;
+    padding-left: 2px;
+}
+hr {
+    margin-top: 15px ;
+    margin-bottom: 5px;
+}
+.cart-content {
+    margin-top: 20px;
+}
+/* total */
+.total {
+    display: flex;
+    width: 65px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+.total-title {
+    font-size: large;
+    font-weight: 700;
+    color: #5c5c5c;
+}
+.total-price {
+    font-weight: bold;
+    font-size: medium;
+}
+.btn-buy {
+   padding: 12px 20px;
+  background-color: orange;
+  font-size: large;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin: 1.5rem auto 0 auto;
+  display: flex;
+  text-align: center;
+}
+.btn-buy:hover {
+    transition: 0.5s;
+    background-color: #5c5c5c;
+    color: #fff;
+}
+#close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+   
+}
+/* fisrt section starts here */
+.fs {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.fs-1 {
+    
+    width: 90%;
+    
+    
+    align-items: center;
+    display: flex;
+}
+.fs-img {
+    width: 100%;
+    
+}
+.fs-1-1 {
+   position: absolute;
+    width: 500px;
+    height: 200px;
+    
+    padding: 10px;
+}
+.fs-p-1 {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.ecom-dem {
+    color: orange;
+}
+.fs-p-2 {
+    font-size: larger;
+  
+    margin-top: 10px;
+}
+/* Second section starts here */
+.sc {
+    width: 100%;
+    margin-top: 20px;
+   
+}
+.sc-1 {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.sc-p-1 {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+}
+.sc-2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* shop items  */
+.item-container {
+    height: 350px;
+    width: 250px;
+    border: 1px solid #5c5c5c;
+    padding: 10px;
+    border-radius: 5%;
+    margin: 10px 10px 10px 10px;
+   
+    
+}
+.item-container:hover {
+    padding: 0px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.item-image {
+    width: 100%;
+    margin: 5px 5px 5px 5px ;
+    
+}
+.item-name {
+    font-size: larger;
+    font-weight: bold;
+}
+.item-price {
+    font-size: large;
+    font-weight: 100;
+    color: #5c5c5c;
+}
+.p-a {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-cart {
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+}
